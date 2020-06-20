@@ -8,29 +8,23 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-python -m pip install -r requirements.txt
-```
+Python3.X.X
 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
 
-Say what the step will be
+You can use pip for installing required packages
 
 ```
-Give the example
+python -m pip install -r requirements.txt
 ```
 
-And repeat
+or 
+use anaconda
+https://www.anaconda.com/products/individual
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+## Placeholder content below
 
 ## Running the tests
 
