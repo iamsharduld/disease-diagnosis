@@ -27,10 +27,6 @@ def convert(data):
     data=data.fillna(-999)
     return data
     
-def convert_test_vector(data):
-    number = preprocessing.LabelEncoder()
-    data[colmn] = number.fit_transform(data[colmn])
-    return data
 
 data = pd.read_csv('exported_data.csv')
 # data.drop('1SS', axis=1, inplace=True)
@@ -95,5 +91,5 @@ print("Naïve Bayes: ", accuracy_score(GaussianNB_prediction, y_test))
 # print(sorted_dic)
 
 # print(confusion_matrix(GaussianNB_prediction, y_test))
-print(GaussianNB_model.predict_proba([[-999,3,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999]]))
-print(GaussianNB_model.predict([[np.nan,3,4,2,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999,-999]]))
+print(GaussianNB_model.predict_proba([[1,3,3,2,4,0,0,1,0,1,0,0,1,1,0,2,1,0,1,1,0,0,0,0,1,1,0,0,1,1,1,1,1,1]]))
+print(GaussianNB_model.predict([[1,3,3,2,4,0,0,1,0,1,0,0,1,1,0,2,1,0,1,1,0,0,0,0,1,1,0,0,1,1,1,1,1,1]]))
