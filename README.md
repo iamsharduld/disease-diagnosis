@@ -1,4 +1,4 @@
-# Project Title
+# Consult.me
 
 Helping disease diagnosis for stomach pain using various symptoms
 
